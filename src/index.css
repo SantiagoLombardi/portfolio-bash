@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  margin: 0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.text-white {
+  color: #fff;
+}
+
+.terminal-container {
+  background-color: #000;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+.terminal-line {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.terminal-prompt {
+  color: #00ff00;
+}
+
+input[type="text"] {
+  display: inline-block !important; 
+}
+
+@keyframes typing {
+  from {width: 0%;}
+}
+
+.startMessage {
+  padding: 0px 8 8 8;
+}
+
+.flex-col {
+  flex-direction: column !important;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.text-blue-100 {
+  color: rgb(219 234 254);
+}
+.text-red-500 {
+  color: rgb(239 68 68);
+}
+.text-yellow-300 {
+  color: rgb(253 224 71);
+}
+.text-blue-400 {
+  color: rgb(96 165 250);
+}
+.text-yellow-500 {
+  color: rgb(234 179 8);
+}
