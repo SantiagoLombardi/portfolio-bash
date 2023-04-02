@@ -1,5 +1,5 @@
 # LomBash V1.0 Technical Documentation
-Welcome to the technical documentation for LomBash V1.0, a unique and innovative portfolio concept that emulates a Bash terminal. This document outlines the different commands and functionalities that are available in LomBash V1.0.
+Welcome to the technical documentation for LomBash V1.0, a unique and innovative portfolio concept that emulates a Bash terminal. This document outlines the different commands and functionalities that are available in LomBash V1.0
 
 ## Commands
 LomBash V1.0 features the following predefined commands:
