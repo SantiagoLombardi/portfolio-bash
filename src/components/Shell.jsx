@@ -8,7 +8,7 @@ const Shell = () => {
   const outputValueNull = 'Hi, enter a command here below, if you need help type "help"'
   const [placeholder, setPlaceholder] = useState("Escriba su comando aquí...")
 	const [outputColor, setOutputColor] = useState("text-blue-100")
-  const [commandHistory, setCommandHistory] = useState([""])
+  let commandHistory = []
 
   const handleInput = (event) => {
     const inputValue = event.target.value;
@@ -55,7 +55,7 @@ const Shell = () => {
       setOutputValue(`the command "${command}" is still in development, please try again lately`);
       setPlaceholder(`Please try with another command to continue`)
     }
-    setCommandHistory([...commandHistory, outputValue])
+    commandHistory = [...commandHistory, outputValue]
     console.log(commandHistory)
     setInputValue("");
   };
@@ -66,11 +66,14 @@ const Shell = () => {
     }
   };
 
+
+
   const outputPre = "> ";
   return (
     <div>
       <div className='flex flex-col'style={{display: 'flex', flexDirection: 'column !important'}}>
-        { outputValue? null : <StartMessage className='startMessage px-2 pb-2 typeAnimation'/> }
+        { outputValue? null : <StartMessage/> }
+        { commandHistory? commandHistory.map() : null}
         <div className='flex flex-row' style={{display: 'flex', flexDirection: 'row'}}>
           {outputPre}
           <div className='ml-2 ' style={{marginLeft: '8px'}}>

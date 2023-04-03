@@ -1,13 +1,9 @@
-const CommandHistory = ({ commandHistory }) => {
+
+const CommandHistory = () => {
+  const pre = "> "
   return (
     <div>
-      {commandHistory.map(({ command, output }, index) => (
-        <div key={index}>
-          <span className="prompt">$</span> {command}
-          <br />
-          {output}
-        </div>
-      ))}
+      {pre}
     </div>
   );
 };
