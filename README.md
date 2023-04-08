@@ -8,4 +8,4 @@ Creating this project was an interesting and enjoyable experience that allowed m
 
 I hope that LomBash V1.0 inspires you to come up with your unique portfolio concept. Feel free to use the code and customize it to your liking. Thank you for taking the time to explore LomBash V1.0, and I hope that you enjoy using it as much as I enjoyed creating it.
 
-                                                                                                                                                            -Santiago
+Santiago.
